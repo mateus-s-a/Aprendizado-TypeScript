@@ -1,0 +1,40 @@
+"use strict";
+var dias09;
+(function (dias09) {
+    dias09[dias09["domingo"] = 0] = "domingo";
+    dias09[dias09["segunda"] = 1] = "segunda";
+    dias09[dias09["ter\u00E7a"] = 2] = "ter\u00E7a";
+    dias09[dias09["quarta"] = 3] = "quarta";
+    dias09[dias09["quinta"] = 4] = "quinta";
+    dias09[dias09["sexta"] = 5] = "sexta";
+    dias09[dias09["sabado"] = 6] = "sabado";
+})(dias09 || (dias09 = {}));
+console.log(typeof dias09);
+console.log(dias09.domingo);
+console.log(dias09['segunda']);
+console.log(dias09[3]);
+const d09 = new Date();
+console.log(d09.getDate());
+console.log(d09.getDay());
+console.log(dias09[d09.getDay()]);
+var cores;
+(function (cores) {
+    cores["branco"] = "#fff";
+    cores["vermelho"] = "#f00";
+    cores["verde"] = "#0f0";
+    cores["azul"] = "#00f";
+    cores["preto"] = "#000";
+})(cores || (cores = {}));
+console.log(cores.branco);
+console.log(cores['branco']);
+var tipoUsuario;
+(function (tipoUsuario) {
+    tipoUsuario[tipoUsuario["USER"] = 0] = "USER";
+    tipoUsuario[tipoUsuario["ADMIN"] = 1] = "ADMIN";
+    tipoUsuario[tipoUsuario["SUPER"] = 2] = "SUPER";
+})(tipoUsuario || (tipoUsuario = {}));
+console.log(tipoUsuario.USER);
+console.log(tipoUsuario.ADMIN);
+console.log(tipoUsuario.SUPER);
+const tp09 = tipoUsuario.USER;
+console.log(tp09);

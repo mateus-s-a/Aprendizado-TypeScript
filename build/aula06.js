@@ -1,0 +1,13 @@
+"use strict";
+let numeros06 = [20, 30, 40];
+let numeros06_2 = [50, 60, 70];
+let numeros06_3 = [80, 90, 100];
+let numeros06_4 = [110, 120, 130];
+numeros06_4.push(140, 160);
+numeros06_4.unshift(150, 100);
+numeros06_4.pop();
+numeros06_4.shift();
+console.log(numeros06_4);
+let numeros_ro06 = [1, 2, 3, 4, 5];
+let numeros_dobrados06 = numeros_ro06.map((el) => el * 2);
+console.log(numeros_dobrados06);
